@@ -1,0 +1,157 @@
+
+@font-face {
+    font-family: 'nokia';
+    src: url('./nokiafc22.woff') format('woff');
+}
+
+* {
+    font-family: 'nokia';
+}
+
+body {
+    
+    margin: 0;
+    padding: 0;
+}
+
+#game-over-msg {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: #333;
+    font-size: 24px;
+    position: relative;
+    top: 75px;
+    font-weight: bold;
+}
+
+#reset-btn {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: transparent;
+    color: #333;
+    font-size: 16px;
+    border: solid #333;
+    position: relative;
+    top: 90px;
+    z-index: 3;
+}
+
+#reset-btn:hover {
+    cursor: pointer;
+}
+
+#score-board {
+    position: absolute;
+    top: 13px;
+    right: 17px;
+    color: #333;
+    font-weight: bolder;
+    z-index: 3;
+}
+
+#boundry {
+    width: 600px;
+    height: 300px;
+    position: relative;
+    top: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #333;
+    background: transparent;
+}
+
+#border {
+    width: calc(100%);
+    height: calc(100vh);
+    background-color: #1ee000;
+    background-image: url("https://www.transparenttextures.com/patterns/blu-stripes.png");
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+}
+
+#border:after {
+    display: block;
+    position: relative;
+    background-image: linear-gradient(to bottom right, transparent 0%, #444 100%);
+    background-image: -moz-linear-gradient(to bottom right, transparent 0%, #444 100%);
+    content: '';
+    bottom: 0;
+    left: 0;
+    opacity: 0.8;
+    position: absolute;
+    right:0;
+    top:0;
+  }
+
+.scale {
+    height: 15px;
+    width: 15px;
+    background-color: #333;
+    position: absolute;
+    z-index: 2;
+    border-radius: 1px;
+}
+
+.apple {
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    z-index: 2;
+}
+
+.apple-1 {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    border: none;
+    height: 5px;
+    width: 5px;
+    position: absolute;
+    left: 5px;
+    top: 0px;
+    background-color: #333;
+}
+
+.apple-2 {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    border: none;
+    height: 5px;
+    width: 5px;
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    background-color: #333;
+}
+
+.apple-3 {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    border: none;
+    height: 5px;
+    width: 5px;
+    position: absolute;
+    left: 0px;
+    top: 5px;
+    background-color: #333;
+}
+
+.apple-4 {
+    display: inline-block; 
+    margin: 0;
+    padding: 0;   
+    border: none;
+    height: 5px;
+    width: 5px;
+    position: absolute;
+    left: 10px;
+    top: 5px;
+    background-color: #333;
+}
