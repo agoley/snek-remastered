@@ -1,2 +1,2 @@
-# snek-remastered-
+# snek-remastered
 Snek Game Remastered
